@@ -1,1 +1,27 @@
 // Specific CSS for your home-page
+
+// phone
+
+@media (min-width: 200px ){
+  body{
+    margin: 0px;
+  }
+}
+
+// tablet
+@media (min-width: 768px ){
+  body{
+    margin: 0px 30px;
+  }
+}
+// laptop
+@media (min-width: 1280px ){
+  body{
+    margin: 0px 100px;
+  }
+}
+@media (min-width: 1440px ){
+  body{
+    margin: 0px 350px;
+  }
+}

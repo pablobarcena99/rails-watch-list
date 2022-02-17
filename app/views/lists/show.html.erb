@@ -1,11 +1,15 @@
-<h1><%= @list.name %></h1>
-<%= link_to "add film", new_list_bookmark_path(@list) %>
-<ul>
-  <% @list.bookmarks.each do |bookmark| %>
-  <li>
-    <%= bookmark.movie.title %>
-    <%= bookmark.comment %>
-    <%= link_to "Delete",bookmark_path(bookmark),method: :delete,data: { confirm: "Are you sure?" } %>
-  </li>
-  <% end %>
-</ul>
+<%= render "components/banner_list" %>
+
+<div class="cards-container">
+    <% @list.bookmarks.each do |bookmark| %>
+    <div class="film-card">
+      <div class="film-poster">
+        <img src= <%= bookmark.movie.poster_url %> alt="">
+      </div>
+      <div class="film-info">
+        <p><%= bookmark.comment %></p>
+        <%= bookmark.movie.title.capitalize %>.
+      </div>
+    </div>
+    <% end %>
+  </div>
