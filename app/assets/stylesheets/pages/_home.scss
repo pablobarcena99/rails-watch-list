@@ -1,27 +1,33 @@
 // Specific CSS for your home-page
-
+body{
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #FFF7EB;
+}
 // phone
-
-@media (min-width: 200px ){
+@media (max-width: 479px ){
   body{
     margin: 0px;
   }
+
+}
+@media (max-width: 767px ){
+  body{
+    margin: 0px;
+  }
+
 }
 
 // tablet
-@media (min-width: 768px ){
+@media (max-width: 991px ){
   body{
-    margin: 0px 30px;
+    margin: 0px;
   }
 }
 // laptop
 @media (min-width: 1280px ){
   body{
-    margin: 0px 100px;
-  }
-}
-@media (min-width: 1440px ){
-  body{
-    margin: 0px 350px;
+
+    max-width: 2048px;
   }
 }

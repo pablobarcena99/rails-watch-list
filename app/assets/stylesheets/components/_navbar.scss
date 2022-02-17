@@ -2,7 +2,7 @@
   justify-content: space-between;
   border-color: black;
   border-style: solid;
-  border-width: 8px 8px 0px 8px;
+  border-width: 0px 4px 0px 4px;
   background-color: #b44444;
 
   &:hover{
@@ -21,6 +21,17 @@
   font-size: 40px;
     color: black;
     font-weight: 700;
+
+  }
+.navbar-brand{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  h2{
+    color: black;
+    margin: 0;
+  }
 }
 .nav-link{
   font-size: 40px;
