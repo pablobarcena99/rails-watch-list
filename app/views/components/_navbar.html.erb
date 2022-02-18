@@ -1,17 +1,13 @@
-<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-  <div class="container-fluid">
-    <div class="navbar-brand" >
-        <h2>p.o.p.c.o.r.n.</h2>
-    </div>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+<div class="navbar">
+<div class="navbar-logo">
+    <p>watch.list.</p>
+</div>
+  <%= link_to lists_path, class: "nav-link" do%>
+    <p>.index</p>
+  <% end %>
+</div>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto">
-          <li class="nav-item active">
-            <%= link_to "index.", lists_path, class: "nav-link"%>
-          </li>
+
           <%# <li class="nav-item dropdown">
             <img class="avatar dropdown-toggle" id="navbarDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="https://kitt.lewagon.com/placeholder/users/ssaunier" />
             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
@@ -21,7 +17,3 @@
           </li> %>
           <!--li class="nav-item"-->
           <!--/li-->
-      </ul>
-    </div>
-  </div>
-</div>

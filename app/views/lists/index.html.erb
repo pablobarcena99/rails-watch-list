@@ -6,9 +6,11 @@
       <div class="card-image">
         <img src= <%= list.url %> alt="">
       </div>
-      <div class="card-name">
-        <%= link_to (list.name).capitalize, list_path(list) %>.
-      </div>
+      <%= link_to list_path(list), class:"list-name-link" do %>
+        <div class="card-name">
+          <p><%= (list.name).capitalize %></p>
+        </div>
+         <% end %>
     </div>
     <% end %>
   </div>

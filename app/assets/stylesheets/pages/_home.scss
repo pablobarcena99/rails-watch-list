@@ -2,18 +2,43 @@
 body{
   margin-left: auto;
   margin-right: auto;
-  background-color: #FFF7EB;
 }
 // phone
 @media (max-width: 479px ){
   body{
     margin: 0px;
   }
+  .card-name {
+    p{
+      font-size: 20px;
+    }
+  }
+  .banner {
+    h1{
+      font-size: 40px;
+    }
+  }
+  #title-pop{
+    height: 250px;
+  }
 
 }
 @media (max-width: 767px ){
   body{
     margin: 0px;
+  }
+  .card-name {
+    p{
+      font-size: 24px;
+    }
+  }
+  .banner {
+    h1{
+      font-size: 40px;
+    }
+  }
+  #title-pop{
+    height: 250px;
   }
 
 }
